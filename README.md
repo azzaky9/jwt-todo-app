@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Getting Started Locally Setup
 
 First, run the development server:
 
@@ -16,21 +16,30 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## App Specification
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Authentication**: Implement Signin/Signup functionality using JWT for Role-Based Access Control (RBAC) and token verification/validation.
+- **CRUD Operations for Tasks/Todos**: Create, Read, Update, and Delete tasks or todos. Mark tasks as complete and view details of individual todos.
+- **Profile Management**: Update user profile information and change passwords.
+- **Todo Pagination**: Set the maximum number of todos displayed per page and control pagination.
 
-## Learn More
+## Tech Stack and Libraries
 
-To learn more about Next.js, take a look at the following resources:
+This project uses the following technologies, concepts, and libraries:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**: A React framework for building server-side rendered and statically generated web applications.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **PostgreSQL**: A powerful, open-source object-relational database system.
+- **bcryptjs**: A library to help you hash passwords.
+- **jose**: A library for JSON Web Tokens (JWT) and other JOSE (JSON Object Signing and Encryption) standards.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **ESLint**: A tool for identifying and fixing problems in JavaScript code.
+- **Valibot**: A validation library for TypeScript.
+- **React Query**: A library for fetching, caching, and updating asynchronous data in React applications.
+- **Lucide React**: A library of icons for React.
+- **Sonner**: A library for notifications in React applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Setup Environment Variables
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Before running the application, you need to set up the environment variables. Create a `.env` file in the root directory of your project and copy the contents of `.env.example` into it. Then, fill in the required values.

@@ -1,4 +1,3 @@
-import { JwtPayload } from "./../../node_modules/@types/jsonwebtoken/index.d";
 import bcrypt from "bcryptjs";
 import * as jose from "jose";
 import { ReadonlyRequestCookies } from "next/dist/server/web/spec-extension/adapters/request-cookies";

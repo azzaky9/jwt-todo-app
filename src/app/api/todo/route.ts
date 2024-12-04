@@ -54,8 +54,7 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      const todos = await createTodo(payload.id, validate.output);
-      console.log(todos);
+      await createTodo(payload.id, validate.output);
 
       return NextResponse.json(
         {
