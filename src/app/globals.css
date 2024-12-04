@@ -7,10 +7,13 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #6366f1;
+    --secondary: #1e1e1e;
+    --muted: #959699;
   }
 }
 
@@ -18,4 +21,74 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-primary {
+  @apply bg-indigo-500 text-white py-2 px-4 rounded-md;
+}
+.btn-primary:hover {
+  @apply bg-indigo-600;
+}
+
+.btn-secondary {
+  @apply bg-zinc-900/95 text-white py-2 px-4 rounded-md;
+}
+.btn-secondary:hover {
+  @apply bg-zinc-900;
+}
+
+.btn {
+  @apply py-2 px-4 rounded-md;
+}
+
+.btn-icon {
+  @apply py-2 px-2.5 rounded-md;
+}
+
+.btn-error {
+  @apply bg-red-500 text-white;
+}
+.btn-error:hover {
+  @apply bg-red-600;
+}
+
+.btn-success {
+  @apply bg-green-500 text-white py-2 px-4 rounded-md;
+}
+.btn-success:hover {
+  @apply bg-green-600;
+}
+
+.btn-info {
+  @apply bg-blue-500 text-white py-2 px-4 rounded-md;
+}
+.btn-info:hover {
+  @apply bg-blue-600;
+}
+
+.btn-warning {
+  @apply bg-yellow-500 text-white py-2 px-4 rounded-md;
+}
+.btn-warning:hover {
+  @apply bg-yellow-600;
+}
+
+.base-input {
+  @apply w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+}
+
+.base-input.invalid {
+  @apply border-red-500 focus:ring-red-500 focus:border-red-500;
+}
+
+.base-input:disabled {
+  @apply text-gray-400;
+}
+
+.base-input.invalid:focus {
+  @apply outline-red-500 text-red-500;
+}
+
+.text-muted {
+  color: var(--muted); /* text-zinc-500 */
 }
